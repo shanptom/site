@@ -1,15 +1,14 @@
 ---
-date: '2'
-title: 'Spotify Profile'
-cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+date: '1'
+title: 'Short-Term Groundwater Level Fluctuations '
+cover: './demo2.png'
+external: 'https://pubs.acs.org/doi/10.1021/acs.est.4c01115'
 tech:
-  - React
-  - Styled Components
-  - Express
-  - Spotify API
-  - Heroku
+  - Redox
+  - TAI
+  - Lake Erie
+  - Wetlands
+  - COMPASS
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+Environmental Science & Technology, 2024, IF: 11.7

@@ -1,13 +1,12 @@
 ---
-date: '2018-05-14'
-title: 'Lead Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: '2021-05-31'
+title: 'Technical Sales Specialist(Remote)'
+company: 'Specialized Scientific Solutions'
+location: 'Riyad, Saudi Arabia'
+range: 'Dec 2020 - May 2021'
+url: ''
 ---
 
-- Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more
-- Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements
-- Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders
-- Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship
+- Introduced and presented Illumina and MGI sequencing platforms and related products to prospective clients.
+- Participated in technical training programs provided by Illumina and MGI to maintain up-to-date product knowledge.
+- Authored marketing content including brochures and leaflets to effectively communicate the company’s genomic service offerings.

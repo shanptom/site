@@ -1,12 +1,12 @@
 ---
-date: '2016-12-21'
-title: 'Software Engineer Co-op'
-company: 'Starry'
-location: 'Boston, MA'
-range: 'July - December 2016'
-url: 'https://starry.com/'
+date: '2020-11-31'
+title: 'Assistant Manager'
+company: 'LifeCell '
+location: 'Chennai, India'
+range: 'April - November 2020'
+url: 'https://lifecell.in/'
 ---
 
-- Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS
-- Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry Station internet router
-- Collaborated with designers and other developers to ensure thoughtful and consistent user experiences across Starry’s iOS and Android mobile apps
+- Performed and supervised high-throughput sequencing workflows, including Whole Exome Sequencing (WES), Whole Genome Sequencing (WGS), and HLA typing using the Illumina NextSeq 550 platform.
+- Conducted library preparation, sequencing setup, run execution, and post-run quality assessments.
+- Managed routine instrument maintenance and troubleshooting to ensure optimal performance and data quality.

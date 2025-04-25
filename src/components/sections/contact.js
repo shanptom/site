@@ -55,13 +55,15 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+      <h2 className="numbered-heading overline">CONNECT</h2>
 
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        I am actively seeking Field Application Scientist and Technical Support roles in the
+        Next-Generation Sequencing sector. If you have an opening—or would like to discuss how I can
+        support your team—please don’t hesitate to reach out. I also offer expert NGS data-analysis
+        services and hands-on Basic R workshops tailored to your group’s needs.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

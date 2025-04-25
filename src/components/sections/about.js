@@ -125,7 +125,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'NGS:Illumina,Nanopore',
+    'Metabarcoding:eDNA,aDNA',
+    'R:NGS data analysis',
+    'HPC:SLURM Workflows',
+    'Nextflow:Reproducible Workflows',
+    'Git',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +142,25 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello, I’m Shan Thomas, a molecular biology professional with eight years of
+              experience in microbial ecology, NGS technologies, data analysis, and technical sales
+              & support. I began my career at the Indian Type Culture Collection in New Delhi, where
+              I first worked with Next-Generation Sequencing tools for organism identification.
+              Since then, I’ve held roles that deepened my expertise in NGS workflows and
+              bioinformatics—ultimately designing and implementing reproducible pipelines for
+              high-throughput analysis on HPC systems.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I paused my work in microbial ecology to gain hands-on experience with Next-Generation
+              Sequencing. I joined <a href="https://diagnostics.medgenome.com/">Medgenome Labs</a>
+              —South Asia’s leading molecular diagnostics laboratory—as a Research Associate. Later
+              I moved to <a href="https://lifecell.in">Lifecell Labs</a>, as Assistant manager of
+              NGS Operations. I also gained experience on Technical Sales and Support for an NGS
+              Service Provider Start Up in Riyad.{' '}
             </p>
 
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>The Technologies & Platforms I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">

@@ -1,9 +1,9 @@
 ---
-date: '2017-04-01'
-title: 'Developer'
-company: 'Scout Studio'
-location: 'Northeastern University'
-range: 'Spring 2016 & 2017'
+date: '2021-03-31'
+title: 'Research Associate'
+company: 'Medgenome Labs'
+location: 'Banglore,India'
+range: 'November 2017- March 2020'
 url: 'https://web.northeastern.edu/scout/'
 ---
 

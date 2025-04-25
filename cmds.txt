@@ -1,0 +1,3 @@
+cd D:\site
+set "NODE_OPTIONS=--openssl-legacy-provider"
+npm run develop
