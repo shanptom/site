@@ -1,16 +1,14 @@
 ---
 date: '3'
-title: 'Build a Spotify Connected App'
-cover: './course-card.png'
-external: 'https://www.newline.co/courses/build-a-spotify-connected-app'
+title: 'Local News'
+cover: './blade.png'
+external: 'https://www.toledoblade.com/local/environment/2023/04/05/devices-used-to-help-track-algal-blooms-get-all-calibrated-up-and-ready-to-go/stories/20230405067#:~:text=%E2%80%9CThe%20sensors%20are%20absolutely%20critical%20for%20tracking,advantage.%E2%80%9D%20First%20Published%20April%205%2C%202023%2C%2011:54'
 cta: 'https://www.newline.co/courses/build-a-spotify-connected-app'
 tech:
-  - React
-  - Express
-  - Spotify API
-  - Styled Components
+  - COMPASS
+  - Sensors
+  - Lake Erie
+  - Alagal blooms
 ---
 
-Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.
-
-Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.
+Toledo Blade, 2023

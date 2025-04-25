@@ -81,10 +81,6 @@ const Hero = () => {
         Currently a Research Assistant on{' '}
         <a href="https://compass.pnnl.gov/" target="_blank" rel="noreferrer">
           the COMPASS DOE Project
-        </a>{' '}
-        and Designated Code Breaker for{' '}
-        <a href="https://trishaspanbauer.com/" target="_blank" rel="noreferrer">
-          Spanbauer Lab
         </a>
         .
       </p>

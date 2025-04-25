@@ -1,6 +1,6 @@
 ---
 date: '1'
-title: 'Short-Term Groundwater Level Fluctuations '
+title: 'Subsurface Redox Variability'
 cover: './demo2.png'
 external: 'https://pubs.acs.org/doi/10.1021/acs.est.4c01115'
 tech:

@@ -142,11 +142,11 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello, I’m Shan Thomas, a molecular biology professional with eight years of
-              experience in microbial ecology, NGS technologies, data analysis, and technical sales
-              & support. I began my career at the Indian Type Culture Collection in New Delhi, where
-              I first worked with Next-Generation Sequencing tools for organism identification.
-              Since then, I’ve held roles that deepened my expertise in NGS workflows and
+              Hi, I’m Shan Thomas, a molecular biology professional with eight years of experience
+              in microbial ecology, NGS technologies, data analysis, and technical sales & support.
+              I began my career at the Indian Type Culture Collection in New Delhi, where I first
+              worked with Next-Generation Sequencing tools for organism identification. Since then,
+              I’ve held roles that deepened my expertise in NGS workflows and
               bioinformatics—ultimately designing and implementing reproducible pipelines for
               high-throughput analysis on HPC systems.
             </p>
