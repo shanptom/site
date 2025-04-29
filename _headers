@@ -15,27 +15,27 @@
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-Semibold-6972688a249bd53a6c7e69a89e50cdd6.woff
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2
-  Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-RegularItalic-57371b9e514dbbe9da31dad1a298de2d.woff
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-RegularItalic-5f875bd7b669f1e11b622d4d6d71b5b0.woff2
+/static/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-SemiboldItalic-ad4bd95abee7bca1bdd6a93398f84a04.woff
+/static/Calibre-RegularItalic-5f875bd7b669f1e11b622d4d6d71b5b0.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-MediumItalic-aa285f95879aa2c2d26b228d5e422da6.woff
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-MediumItalic-7aa140573fd9ed30ae01e117c418b12b.woff2
   Cache-Control: public, max-age=31536000, immutable
-/static/SFMono-Regular-e36fa5257c93fc7711eae342068f9eda.woff
-  Cache-Control: public, max-age=31536000, immutable
-/static/SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2
+/static/Calibre-SemiboldItalic-ad4bd95abee7bca1bdd6a93398f84a04.woff
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-SemiboldItalic-5f04bffe7ce988169806d66e417a966a.woff2
   Cache-Control: public, max-age=31536000, immutable
-/static/SFMono-Semibold-6e6f6c93f4bdf9cbd090c60e97a017e2.woff2
+/static/SFMono-Regular-e36fa5257c93fc7711eae342068f9eda.woff
   Cache-Control: public, max-age=31536000, immutable
 /static/SFMono-Semibold-ee054046915420413d0068fb1e7105c3.woff
+  Cache-Control: public, max-age=31536000, immutable
+/static/SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/static/SFMono-Semibold-6e6f6c93f4bdf9cbd090c60e97a017e2.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/SFMono-RegularItalic-3a20a00dfdeb4ba538473fa7bf625cbd.woff
   Cache-Control: public, max-age=31536000, immutable
