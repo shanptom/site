@@ -13,6 +13,7 @@
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -34,10 +35,10 @@
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^5.14.3",
-    "gatsby-plugin-google-gtag": "^5.14.0",
+    "gatsby-plugin-google-gtag": "^5.13.0",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.14.0",
-    "gatsby-plugin-netlify": "^5.14.0",
+    "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-offline": "^6.14.0",
     "gatsby-plugin-react-helmet": "^6.14.0",
     "gatsby-plugin-robots-txt": "^1.5.6",
@@ -53,13 +54,16 @@
     "lodash": "^4.17.19",
     "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-transition-group": "^4.3.0",
     "scrollreveal": "^4.0.5",
-    "styled-components": "^5.3.0",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.2",
+    "styled-components": "^5.3.0"
+  },
+  "resolutions": {
+    "react-server-dom-webpack": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
@@ -73,8 +77,10 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
     "gatsby-remark-code-titles": "^1.1.0",
+    "gh-pages": "^6.3.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.1.2",
+    "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.2.1"
   }
 }

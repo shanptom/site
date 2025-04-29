@@ -17,10 +17,10 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-netlify`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Shan Thomas',
+        short_name: 'Shan Thomas',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
