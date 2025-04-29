@@ -7,23 +7,23 @@
   Referrer-Policy: same-origin
 /static/Calibre-Regular-98526589fa32315c552129869e08427e.woff
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2
-  Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-Medium-46693d9b57a6b8a657b5393258f6e899.woff
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-Medium-568dce56f869a519a015d3b69443b067.woff2
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-Semibold-6972688a249bd53a6c7e69a89e50cdd6.woff
+/static/Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-RegularItalic-57371b9e514dbbe9da31dad1a298de2d.woff
   Cache-Control: public, max-age=31536000, immutable
+/static/Calibre-Semibold-6972688a249bd53a6c7e69a89e50cdd6.woff
+  Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-RegularItalic-5f875bd7b669f1e11b622d4d6d71b5b0.woff2
   Cache-Control: public, max-age=31536000, immutable
-/static/Calibre-MediumItalic-7aa140573fd9ed30ae01e117c418b12b.woff2
-  Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-MediumItalic-aa285f95879aa2c2d26b228d5e422da6.woff
+  Cache-Control: public, max-age=31536000, immutable
+/static/Calibre-MediumItalic-7aa140573fd9ed30ae01e117c418b12b.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/Calibre-SemiboldItalic-ad4bd95abee7bca1bdd6a93398f84a04.woff
   Cache-Control: public, max-age=31536000, immutable
