@@ -8,7 +8,7 @@ module.exports = {
     },
     {
       name: 'ResearchGate',
-      url: 'https://www.researchgate.net/profile/Shan-Thomas/stats',
+      url: 'https://www.researchgate.net/profile/Shan-Thomas/',
     },
     {
       name: 'X',
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: '',
-      url: 'https://codepen.io/bchiang7',
+      url: 'tel:+15551234567',
     },
   ],
 

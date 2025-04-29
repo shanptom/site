@@ -1,29 +1,29 @@
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
+
 const path = require('path');
 const _ = require('lodash');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const postTemplate = path.resolve('src/templates/post.js');
+  const postTemplate = path.resolve(`src/templates/post.js`);
   const tagTemplate = path.resolve('src/templates/tag.js');
 
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "/content/posts/" }
-          frontmatter: { slug: { ne: null } }
-        }
+        filter: { fileAbsolutePath: { regex: "/content/posts/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
           node {
-            id
             frontmatter {
               slug
-              title
             }
-            html
           }
         }
       }
@@ -35,30 +35,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `);
 
+  // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild('Error while running GraphQL query');
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
 
-  // Create posts pages
+  // Create post detail pages
   const posts = result.data.postsRemark.edges;
-  posts.forEach(({ node }) => {
-    if (!node.frontmatter.slug) {
-      reporter.warn(`Skipping post with missing slug: ${node.id}`);
-      return;
-    }
 
+  posts.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: postTemplate,
-      context: {
-        slug: node.frontmatter.slug,
-      },
+      context: {},
     });
   });
 
-  // Create tags pages
+  // Extract tag data from query
   const tags = result.data.tagsGroup.group;
+  // Make tag pages
   tags.forEach(tag => {
     createPage({
       path: `/pensieve/tags/${_.kebabCase(tag.fieldValue)}/`,
@@ -70,7 +66,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 };
 
+// https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
   if (stage === 'build-html' || stage === 'develop-html') {
     actions.setWebpackConfig({
       module: {

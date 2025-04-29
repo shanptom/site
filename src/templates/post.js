@@ -9,12 +9,14 @@ import { Layout } from '@components';
 const StyledPostContainer = styled.main`
   max-width: 1000px;
 `;
+
 const StyledPostHeader = styled.header`
   margin-bottom: 50px;
   .tag {
     margin-right: 10px;
   }
 `;
+
 const StyledPostContent = styled.div`
   margin-bottom: 100px;
   h1,
@@ -50,14 +52,51 @@ const StyledPostContent = styled.div`
   }
 `;
 
+const ErrorMessage = styled.div`
+  padding: 2rem;
+  background: var(--light-navy);
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-top: 2rem;
+`;
+
 const PostTemplate = ({ data, location }) => {
+  // Defensive checks for missing data
+  if (!data?.markdownRemark) {
+    return (
+      <Layout location={location}>
+        <StyledPostContainer>
+          <ErrorMessage>
+            <h1>Post Not Found</h1>
+            <p>The requested post could not be loaded.</p>
+            <Link to="/pensieve">Back to all posts</Link>
+          </ErrorMessage>
+        </StyledPostContainer>
+      </Layout>
+    );
+  }
+
   const { frontmatter, html } = data.markdownRemark;
-  const { title, date, tags } = frontmatter;
+
+  if (!frontmatter || !html) {
+    return (
+      <Layout location={location}>
+        <StyledPostContainer>
+          <ErrorMessage>
+            <h1>Incomplete Post Data</h1>
+            <p>This post is missing required information.</p>
+            <Link to="/pensieve">Back to all posts</Link>
+          </ErrorMessage>
+        </StyledPostContainer>
+      </Layout>
+    );
+  }
+
+  const { title = 'Untitled Post', date = new Date().toISOString(), tags = [] } = frontmatter;
 
   return (
     <Layout location={location}>
       <Helmet title={title} />
-
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
@@ -74,14 +113,16 @@ const PostTemplate = ({ data, location }) => {
                 day: 'numeric',
               })}
             </time>
-            <span>&nbsp;&mdash;&nbsp;</span>
-            {tags &&
-              tags.length > 0 &&
-              tags.map((tag, i) => (
-                <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
-                  #{tag}
-                </Link>
-              ))}
+            {tags.length > 0 && (
+              <>
+                <span>&nbsp;&mdash;&nbsp;</span>
+                {tags.map((tag, i) => (
+                  <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
+                    #{tag}
+                  </Link>
+                ))}
+              </>
+            )}
           </p>
         </StyledPostHeader>
 
@@ -91,16 +132,28 @@ const PostTemplate = ({ data, location }) => {
   );
 };
 
+// Make sure to include the default export
 export default PostTemplate;
 
 PostTemplate.propTypes = {
-  data: PropTypes.object,
-  location: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      html: PropTypes.string,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        date: PropTypes.string,
+        tags: PropTypes.arrayOf(PropTypes.string),
+        slug: PropTypes.string,
+        description: PropTypes.string,
+      }),
+    }),
+  }).isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
+  query ($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
