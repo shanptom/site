@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
-import meImg from '../../images/me.jpg'; // <-- IMPORT AT THE TOP!
 
 const StyledAboutSection = styled.section`
   /* your existing styled-components */
@@ -55,7 +54,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src={meImg}
+              src="../../images/me.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
