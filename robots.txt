@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://shantom.com/sitemap-index.xml
+Host: https://shantom.com
