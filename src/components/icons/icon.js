@@ -17,6 +17,9 @@ import {
   IconTwitter,
 } from '@components/icons';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faResearchgate, faGoogleScholar } from '@fortawesome/free-brands-svg-icons';
+
 const Icon = ({ name }) => {
   switch (name) {
     case 'AppStore':
@@ -47,6 +50,10 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'ResearchGate':
+      return <FontAwesomeIcon icon={faResearchgate} />;
+    case 'GoogleScholar':
+      return <FontAwesomeIcon icon={faGoogleScholar} />;
     default:
       return <IconExternal />;
   }
