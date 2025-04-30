@@ -11,7 +11,7 @@ module.exports = {
       url: 'https://www.researchgate.net/profile/Shan-Thomas/',
     },
     {
-      name: 'X',
+      name: 'Twitter',
       url: 'https://twitter.com/palendna',
     },
     {
@@ -19,8 +19,8 @@ module.exports = {
       url: 'https://linkedin.com/in/shan-thomas-719756aa',
     },
     {
-      name: '',
-      url: 'tel:+15551234567',
+      name: 'GoogleScholar',
+      url: 'https://scholar.google.com/citations?user=9EsIZrgAAAAJ&hl=en&authuser=1',
     },
   ],
 
