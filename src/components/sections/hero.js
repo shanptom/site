@@ -58,7 +58,7 @@ const Hero = () => {
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
-<meta name="google-site-verification" content="OYO4IXBB5_lXdIVApijJ2-w2BzeqXVWqNk0567PJqtY" />
+<meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
   const one = <h1>Hi, I am </h1>;
   const two = <h2 className="big-heading">Shan Thomas.</h2>;
   const three = (
