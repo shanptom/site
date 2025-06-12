@@ -208,28 +208,3 @@ PensievePage.propTypes = {
 
 export default PensievePage;
 
-export const pageQuery = graphql`
-  {
-    allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/content/posts/" },
-        frontmatter: { draft: { ne: true }, date: { ne: null } }
-      }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            slug
-            date
-            tags
-            draft
-          }
-          html
-        }
-      }
-    }
-  }
-`;
