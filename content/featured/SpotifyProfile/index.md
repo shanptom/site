@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2024-10-12'
 title: 'Subsurface Redox Variability'
 cover: './demo2.png'
 external: 'https://pubs.acs.org/doi/10.1021/acs.est.4c01115'

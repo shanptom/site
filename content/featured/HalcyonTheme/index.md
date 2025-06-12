@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '2017-11-12'
 title: 'Legacy of a Pleistocene bacterial community'
 cover: './Legacy.png'
 external: 'https://www.sciencedirect.com/science/article/pii/S0944501318309637'
