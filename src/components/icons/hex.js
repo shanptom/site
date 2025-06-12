@@ -6,8 +6,8 @@ const IconHex = () => (
     <g transform="translate(-8.000000, -2.000000)">
       <g transform="translate(11.000000, 5.000000)">
         <polygon
-          stroke="currentColor"
-          strokeWidth="5"
+          stroke="none"
+          strokeWidth="0.1"
           strokeLinecap="round"
           strokeLinejoin="round"
           points="39 0 0 22 0 67 39 90 78 68 78 23"
