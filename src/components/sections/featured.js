@@ -332,7 +332,9 @@ const Featured = () => {
     }
   `);
 
-  const featuredProjects = data.featured.edges.filter(({ node }) => node);
+  const featuredProjects = data.featured.edges.filter(
+  ({ node }) => node?.frontmatter?.date
+);
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
