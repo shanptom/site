@@ -41,6 +41,16 @@ const StyledSocialList = styled.ul`
       }
     }
   }
+
+  li.resume {
+    margin-top: 20px;
+
+    a {
+      ${({ theme }) => theme.mixins.smallButton};
+      font-size: var(--fz-xxs);
+      padding: 0.5rem 0.75rem;
+    }
+  }
 `;
 
 const Social = ({ isHome }) => (
@@ -54,6 +64,11 @@ const Social = ({ isHome }) => (
             </a>
           </li>
         ))}
+      <li className="resume">
+        <a href="/resume.pdf" download>
+          Resume
+        </a>
+      </li>
     </StyledSocialList>
   </Side>
 );
