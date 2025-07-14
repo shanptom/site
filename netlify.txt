@@ -1,0 +1,76 @@
+The Netlify deploy errored, with the following guidance provided:
+
+**Diagnosis:**
+The build failure is caused by an error in parsing a file named "index.js" at "/src/pages/pensieve/index.js" due to a possible syntax error or the file type not being recognized by Gatsby.
+
+**Solution:**
+1. Check the file "index.js" at "/src/pages/pensieve/index.js" for any syntax errors.
+2. Verify that the file is a valid JavaScript file that Gatsby can parse.
+3. Ensure that any GraphQL fragments or queries in the file are correctly formatted.
+4. Make necessary corrections to the file to address any syntax errors or adjust the file type if needed.
+
+If the issue persists after checking and correcting the file, consider the following additional steps:
+- Verify the package is in the package.json or the file was committed to the repo.
+- Update Node.js version by following the [documentation](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript).
+
+The relevant error logs are:
+
+Line 0: build-image version: 068c1c7d7725d329cc382184c7bbf62ac27e2c09 (noble)
+Line 1: buildbot version: 1ad41682c3cb8ba50e6cec4a3cd94c50f999b538
+Line 2: Fetching cached dependencies
+Line 3: Failed to fetch cache, continuing with build
+Line 4: Starting to prepare the repo for build
+Line 5: No cached dependencies found. Cloning fresh repo
+Line 6: git clone --filter=blob:none https://github.com/shanptom/site
+Line 7: Preparing Git Reference refs/heads/main
+Line 8: Starting to install dependencies
+Line 9: Using PHP version
+Line 10: Attempting Node.js version '20' from .nvmrc
+Line 11: Downloading and installing node v20.19.3...
+Line 12: Downloading https://nodejs.org/dist/v20.19.3/node-v20.19.3-linux-x64.tar.xz...
+Line 13: Computing checksum with sha256sum
+Line 436:           title
+Line 437:           description
+Line 438:           date
+Line 439:           slug
+Line 440:           tags
+Line 441:         }
+Line 442:       }
+Line 443:     }
+Line 444:   }
+Line 445: }
+Line 446: [2K[1G[31merror[39m There was a problem parsing "/opt/build/repo/src/pages/pensieve/index.js"; any GraphQL
+Line 447: fragments or queries in this file were not processed.
+Line 448: This may indicate a syntax error in the code, or it may be a file type
+Line 449: that Gatsby does not know how to parse.
+Line 450: [2K[1G[90mnot finished[39m Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 14.598s
+Line 451: [2K[1G[31mfailed[39m extract queries from components - 6.803s
+Line 452: [91m[1m​[22m[39m
+Line 453: [91m[1m"build.command" failed                                        [22m[39m
+Line 454: [91m[1m────────────────────────────────────────────────────────────────[22m[39m
+Line 455: ​
+Line 456:   [31m[1mError message[22m[39m
+Line 457:   Command failed with exit code 1: npm install --legacy-peer-deps && npm run build
+Line 458: ​
+Line 459:   [31m[1mError location[22m[39m
+Line 460:   In build.command from netlify.toml:
+Line 461:   npm install --legacy-peer-deps && npm run build
+Line 462: ​
+Line 463:   [31m[1mResolved config[22m[39m
+Line 464:   build:
+Line 465:     command: npm install --legacy-peer-deps && npm run build
+Line 466:     commandOrigin: config
+Line 467:     environment:
+Line 468:       - NODE_VERSION
+Line 469:       - NPM_VERSION
+Line 470:       - NPM_FLAGS
+Line 471:     publish: /opt/build/repo/public
+Line 472:     publishOrigin: config
+Line 473:   plugins:
+Line 474:     - inputs: {}
+Line 475:       origin: ui
+Line 476:       package: "@netlify/plugin-gatsby"
+Line 477: Failed during stage 'building site': Build script returned non-zero exit code: 2
+Line 478: Build failed due to a user error: Build script returned non-zero exit code: 2
+Line 479: Failing build: Failed to build site
+Line 480: Finished processing build request in 1m55.195s
