@@ -1,0 +1,27 @@
+# Netlify configuration for static HTML site
+[build]
+  # No build command needed - static HTML site
+  command = ""
+  # Publish from root directory
+  publish = "."
+
+# Prevent Netlify from trying to install npm dependencies
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--version"
+
+# SPA-style redirect for client-side routing (if needed)
+# Uncomment if you add client-side routing in the future
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
