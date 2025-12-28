@@ -1,5 +1,4 @@
 # Netlify configuration for static HTML site
-# IMPORTANT: Disable the @netlify/plugin-gatsby plugin in Netlify UI
 # Go to: Site Settings → Build & deploy → Build plugins → Remove @netlify/plugin-gatsby
 
 [build]
