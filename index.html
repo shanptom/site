@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Shan Thomas - NGS Scientist, Data Scientist & Microbial Ecologist. Bridging molecular biology with computational analysis.">
+  <meta name="author" content="Shan Thomas">
+  <meta name="keywords"
+    content="NGS, Next-Generation Sequencing, Data Science, R Shiny, Bioinformatics, Machine Learning, Microbiome Analysis">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://shanptom.github.io/">
+  <meta property="og:title" content="Shan Thomas | NGS | Data Science | R/Shiny">
+  <meta property="og:description"
+    content="NGS Scientist, Data Scientist & Microbial Ecologist - Bridging molecular biology with computational analysis.">
+  <meta property="og:image" content="https://shanptom.github.io/assets/photo.png">
+  <meta property="og:url" content="https://shanptom.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shan Thomas | NGS | Data Science | R/Shiny">
+  <meta name="twitter:description" content="NGS Scientist, Data Scientist & Microbial Ecologist.">
+  <meta name="twitter:image" content="https://shanptom.github.io/assets/photo.png">
+  <meta name="google-site-verification" content="J2_-Jr4mRzdCgNMod5ljSBTgrlZ3JqS5E12Qre64xkI" />
+  <title>Shan Thomas | NGS | Data Science | R/Shiny</title>
+  <link rel="icon" href="assets/dna.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHNTM7BE72"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NHNTM7BE72');
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shan Thomas",
+      "url": "https://shanptom.github.io/",
+      "image": "https://shanptom.github.io/assets/photo.png",
+      "jobTitle": "Molecular Biologist & NGS Specialist",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Toledo"
+      },
+      "sameAs": [
+        "https://github.com/shanptom",
+        "https://linkedin.com/in/shan-thomas-719756aa",
+        "https://www.researchgate.net/profile/Shan-Thomas/"
+      ]
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="bracket">{</span>
+        <span class="name">shan.thomas</span>
+        <span class="bracket">}</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">home</a>
+        <a href="#expertise" class="nav-link">expertise</a>
+        <a href="#projects" class="nav-link">projects</a>
+        <a href="#experience" class="nav-link">experience</a>
+        <a href="#publications" class="nav-link">publications</a>
+        <a href="#contact" class="nav-link">contact</a>
+      </div>
+
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>open for opportunities</span>
+      </div>
+
+      <label class="theme-switch" aria-label="Toggle theme">
+        <input type="checkbox" id="theme-checkbox">
+        <span class="slider round">
+          <div class="background"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </span>
+      </label>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home">home</a>
+    <a href="#expertise">expertise</a>
+    <a href="#projects">projects</a>
+    <a href="#experience">experience</a>
+    <a href="#publications">publications</a>
+    <a href="#contact">contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-subtitle">From Wet Lab to Web App</p>
+        <h1 class="hero-title">
+          <span class="gradient-text">Molecular Biology & Data Science</span>
+        </h1>
+        <p class="hero-description">
+          Bridging the gap between the bench and the cloud. I integrate wet-lab molecular expertise with
+          computational data science to deliver end-to-end NGS solutions—from library preparation to
+          interactive visualization.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-terminal"></i>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dna-container" id="dna-container">
+          <div class="dna-helix" id="dna-helix"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise - Bento Box -->
+  <section id="expertise">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-code"></i>
+          Core Expertise
+        </span>
+        <h2 class="section-title">The Codon</h2>
+        <p class="section-description">
+          Three roles, one mission. Like the triplet codon that translates genetic code into functional proteins,
+          my expertise in NGS Science, Data Science, and Microbial Ecology combines to decode complex biological systems
+          and drive scientific discovery.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <article class="bento-card ngs reveal delay-100">
+          <div class="card-icon"><i class="fas fa-dna"></i></div>
+          <span class="card-label">Base 01</span>
+          <h3 class="card-title">NGS Scientist</h3>
+          <p class="card-description">
+            End-to-end Next-Generation Sequencing expertise from library prep to data delivery.
+            Experienced with Illumina and Nanopore platforms for amplicon, WES, and WGS workflows.
+          </p>
+          <div class="card-skills">
+            <span class="skill-tag">Illumina</span>
+            <span class="skill-tag">Nanopore</span>
+            <span class="skill-tag">Library Prep</span>
+            <span class="skill-tag">Sanger</span>
+            <span class="skill-tag">QC</span>
+            <span class="skill-tag">LIMS</span>
+          </div>
+          <div class="card-stats">
+            <div class="stat-item">
+              <span class="stat-value">10</span>
+              <span class="stat-label">Years</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5000+</span>
+              <span class="stat-label">Libraries</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card data reveal delay-200">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <span class="card-label">Base 02</span>
+          <h3 class="card-title">Data Scientist</h3>
+          <p class="card-description">
+            Statistical analysis and machine learning for biological data interpretation.
+            Microbiome analysis, diversity metrics, and predictive modeling on HPC systems.
+          </p>
+          <div class="card-skills">
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Markdown</span>
+            <span class="skill-tag">ML</span>
+            <span class="skill-tag">HPC</span>
+            <span class="skill-tag">Shiny</span>
+            <span class="skill-tag">Cloud Computing</span>
+            <span class="skill-tag">Nextflow</span>
+          </div>
+          <div class="card-stats">
+            <div class="stat-item">
+              <span class="stat-value">1</span>
+              <span class="stat-label">R Package</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Web Apps</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card ecology reveal delay-300">
+          <div class="card-icon"><i class="fas fa-bacteria"></i></div>
+          <span class="card-label">Base 03</span>
+          <h3 class="card-title">Microbial Ecologist</h3>
+          <p class="card-description">
+            Exploring microbial communities through metabarcoding and ancient DNA analysis.
+            From soil microbiomes to paleoenvironmental reconstructions.
+          </p>
+          <div class="card-skills">
+            <span class="skill-tag">Metabarcoding</span>
+            <span class="skill-tag">16S rRNA</span>
+            <span class="skill-tag">18S rRNA</span>
+            <span class="skill-tag">QIIME2</span>
+            <span class="skill-tag">DADA2</span>
+            <span class="skill-tag">Ancient DNA</span>
+            <span class="skill-tag">qPCR</span>
+          </div>
+          <div class="card-stats">
+            <div class="stat-item">
+              <span class="stat-value">6</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100+</span>
+              <span class="stat-label">Citations</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Expanded Expertise Section -->
+      <div class="expertise-expanded" style="margin-top: 6rem;">
+
+        <!-- Radar Plot: Skills Triangle -->
+        <div class="section-header" style="margin-bottom: 3rem;">
+          <h3 class="section-title" style="font-size: 1.8rem;">Skill Landscape</h3>
+          <p class="section-description">
+            Mapping proficiency across the three core domains.
+          </p>
+        </div>
+        <div class="radar-container reveal" style="display: flex; justify-content: center; margin-bottom: 4rem;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+            <div class="radar-chart-container"
+              style="position: relative; display: flex; justify-content: center; align-items: center;">
+              <canvas id="radarChart" width="600" height="600"></canvas>
+              <div id="radarTooltip"
+                style="position: fixed; display: none; background: rgba(0, 0, 0, 0.9); color: #fff; padding: 0.75rem 1rem; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; pointer-events: none; z-index: 100; border: 1px solid var(--border-color);">
+              </div>
+            </div>
+
+            <!-- Legend -->
+            <div
+              style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div style="width: 20px; height: 20px; background: var(--neon-cyan); border-radius: 4px; opacity: 0.8;">
+                </div>
+                <span style="color: var(--text-secondary);">NGS Scientist</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div
+                  style="width: 20px; height: 20px; background: var(--neon-magenta); border-radius: 4px; opacity: 0.8;">
+                </div>
+                <span style="color: var(--text-secondary);">Data Scientist</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div style="width: 20px; height: 20px; background: #ff6b35; border-radius: 4px; opacity: 0.8;">
+                </div>
+                <span style="color: var(--text-secondary);">Microbial Ecologist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies Visual Grid -->
+        <div class="technologies-section" style="margin-top: 4rem;">
+          <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">Tech Stack
+          </h3>
+          <div class="tech-grid"
+            style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 2rem; justify-items: center; align-items: center; max-width: 1200px; margin: 0 auto;">
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <img src="assets/illumina.png" alt="Illumina"
+                style="max-height: 50px; max-width: 100%; object-fit: contain;">
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <img src="https://avatars.githubusercontent.com/u/7668184?s=200&v=4" alt="Nanopore"
+                style="max-height: 50px; max-width: 100%; object-fit: contain; border-radius: 50%;">
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <img src="assets/nextflow.png" alt="Nextflow"
+                style="max-height: 50px; max-width: 100%; object-fit: contain;">
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <i class="fab fa-r-project" style="font-size: 2.5rem; color: var(--neon-blue);"></i>
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <img src="assets/shiny.png" alt="DADA2" style="max-height: 50px; max-width: 100%; object-fit: contain;">
+            </div>
+
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <i class="fab fa-python" style="font-size: 2.5rem; color: var(--neon-blue);"></i>
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Slurm_logo.svg" alt="SLURM"
+                style="max-height: 50px; max-width: 100%; object-fit: contain;">
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <i class="fab fa-git-alt" style="font-size: 2.5rem; color: var(--neon-magenta);"></i>
+            </div>
+
+            <div class="tech-item"
+              style="display: flex; align-items: center; justify-content: center; height: 50px; width: 100%;">
+              <i class="fab fa-docker" style="font-size: 2.5rem; color: var(--neon-blue);"></i>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-code"></i>
+          Portfolio
+        </span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          Computational tools and analysis pipelines for NGS and microbiome research.
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-container" id="carousel-container">
+            <div class="carousel-slide">
+              <div class="carousel-card">
+                <div class="carousel-card-header">
+                  <div class="project-visual visual-icon microbiome">
+                    <i class="fas fa-bacteria"></i>
+                  </div>
+                  <div class="carousel-card-title">
+                    <span class="subtitle">R Shiny App</span>
+                    <h3>MicrobeStudio</h3>
+                  </div>
+                </div>
+                <div class="carousel-content">
+                  <p>Interactive application for exploring diversity, ordination, and taxa distribution from
+                    metabarcoding data.</p>
+                  <div class="carousel-tags">
+                    <span>R</span>
+                    <span>Shiny</span>
+                    <span>Visualization</span>
+                  </div>
+                  <a href="https://shanptom.shinyapps.io/MicrobeStudio/" target="_blank" class="carousel-link">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-card">
+                <div class="carousel-card-header">
+                  <div class="project-visual visual-icon biodiversity">
+                    <i class="fas fa-globe-americas"></i>
+                  </div>
+                  <div class="carousel-card-title">
+                    <span class="subtitle">Cloud Deployed</span>
+                    <h3>Biodiversity Dashboard</h3>
+                  </div>
+                </div>
+                <div class="carousel-content">
+                  <p>Cloud-hosted biodiversity data explorer using R Shiny, Docker, and Google Cloud Run.</p>
+                  <div class="carousel-tags">
+                    <span>R</span>
+                    <span>Docker</span>
+                    <span>GCP</span>
+                  </div>
+                  <a href="https://bioexpo-870918170044.us-central1.run.app" target="_blank" class="carousel-link">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-card">
+                <div class="carousel-card-header">
+                  <div class="project-visual visual-icon code">
+                    <i class="fas fa-terminal"></i>
+                  </div>
+                  <div class="carousel-card-title">
+                    <span class="subtitle">R Package</span>
+                    <h3>CodeSparkR</h3>
+                  </div>
+                </div>
+                <div class="carousel-content">
+                  <p>R package connecting console to 400+ LLMs via OpenRouter for AI-powered coding assistance.</p>
+                  <div class="carousel-tags">
+                    <span>R</span>
+                    <span>API</span>
+                    <span>AI</span>
+                  </div>
+                  <a href="https://github.com/shanptom/CodeSparkR/" target="_blank" class="carousel-link">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-card">
+                <div class="carousel-card-header">
+                  <div class="project-visual visual-icon lab">
+                    <i class="fas fa-flask"></i>
+                  </div>
+                  <div class="carousel-card-title">
+                    <span class="subtitle">Streamlit App</span>
+                    <h3>ProtoCart</h3>
+                  </div>
+                </div>
+                <div class="carousel-content">
+                  <p>Smart lab assistant that extracts materials from protocols and builds vendor-linked shopping lists.
+                  </p>
+                  <div class="carousel-tags">
+                    <span>Python</span>
+                    <span>Streamlit</span>
+                    <span>NLP</span>
+                  </div>
+                  <a href="https://protocart.streamlit.app/" target="_blank" class="carousel-link">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-card">
+                <div class="carousel-card-header">
+                  <div class="project-visual visual-icon cloud">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <div class="carousel-card-title">
+                    <span class="subtitle">Infrastructure</span>
+                    <h3>AWS Cloud Setup</h3>
+                  </div>
+                </div>
+                <div class="carousel-content">
+                  <p>Metabarcoding database implementation using AWS EC2, S3, and IAM for scalable bioinformatics
+                    workflows.</p>
+                  <div class="carousel-tags">
+                    <span>AWS</span>
+                    <span>Cloud</span>
+                    <span>Database</span>
+                  </div>
+                  <a href="https://github.com/shanptom/AWS_trial" target="_blank" class="carousel-link">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-nav prev" id="carousel-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-nav next" id="carousel-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="carousel-dots"></div>
+
+      <!-- Blogs -->
+      <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 1rem; color: var(--text-secondary);">
+        <span class="mono" style="color: var(--neon-cyan);">//</span> Blogs
+      </h3>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h4><a href="https://spanbauerlab.github.io/Metabarcoding/" target="_blank">
+              Metabarcoding Guide <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a></h4>
+          <p>Comprehensive tutorial for processing metabarcoding datasets on HPC systems.</p>
+          <div class="tags">
+            <span class="tag">Documentation</span>
+            <span class="tag">Tutorial</span>
+            <span class="tag">HPC</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4><a href="https://shanptom.github.io/mdZotero/" target="_blank">
+              Markdown & Zotero <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a></h4>
+          <p>Workflow for scientific writing using Markdown with Zotero integration.</p>
+          <div class="tags">
+            <span class="tag">Documentation</span>
+            <span class="tag">Writing</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4><a href="https://shanptom.github.io/GitIntro/" target="_blank">
+              Git & GitHub Guide <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a></h4>
+          <p>Beginner's guide to version control with Git and GitHub for research.</p>
+          <div class="tags">
+            <span class="tag">Tutorial</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-briefcase"></i>
+          Career
+        </span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-description">
+          A decade of bridging laboratory science and computational analysis.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card current reveal">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2022 - Present
+              </span>
+              <span class="experience-badge current-badge">Current</span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">PhD in Biology</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              University of Toledo
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Ohio, USA
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Microbial ecology research using metabarcoding and machine learning
+                approaches</li>
+              <li><i class="fas fa-check-circle"></i>High-performance computing workflows using SLURM scheduling systems
+              </li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Research</span>
+              <span class="tag">HPC</span>
+              <span class="tag">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2020 - 2021
+              </span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Technical Sales Specialist</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              Specialized Scientific Solutions
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Riyadh, Saudi Arabia (Remote)
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Provided technical consultation for MGI and Illumina NGS platforms
+              </li>
+              <li><i class="fas fa-check-circle"></i>End-user training and workflow optimization support</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Sales</span>
+              <span class="tag">Training</span>
+              <span class="tag">NGS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2020
+              </span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Assistant Manager, Molecular Biology</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              LifeCell International
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Chennai, India
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Laboratory management and team coordination</li>
+              <li><i class="fas fa-check-circle"></i>Amplicon, WES, and WGS library preparation workflows</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Management</span>
+              <span class="tag">NGS</span>
+              <span class="tag">Lab</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2017 - 2020
+              </span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Research Associate</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              MedGenome Labs
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Bangalore, India
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Sanger and NGS sequencing operations</li>
+              <li><i class="fas fa-check-circle"></i>Illumina instrument maintenance and troubleshooting</li>
+              <li><i class="fas fa-check-circle"></i>LIMS management and workflow optimization</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Sequencing</span>
+              <span class="tag">LIMS</span>
+              <span class="tag">QC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2015 - 2017
+              </span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Researcher</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              Geobiotechnology Lab
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Trichy, India
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Soil microbial ecology and ancient DNA metabarcoding</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Ecology</span>
+              <span class="tag">Ancient DNA</span>
+              <span class="tag">Microbiome</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">
+                <i class="far fa-calendar"></i>
+                2013 - 2015
+              </span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Senior Research Fellow</h3>
+            <div class="experience-company">
+              <i class="fas fa-building"></i>
+              Indian Agricultural Research Institute - ITCC
+            </div>
+            <div class="experience-location">
+              <i class="fas fa-map-marker-alt"></i>
+              New Delhi, India
+            </div>
+            <ul class="experience-description">
+              <li><i class="fas fa-check-circle"></i>Microbiome analysis and fungal molecular taxonomy</li>
+              <li><i class="fas fa-check-circle"></i>Entomology metabarcoding projects</li>
+            </ul>
+            <div class="experience-tags">
+              <span class="tag">Taxonomy</span>
+              <span class="tag">Fungi</span>
+              <span class="tag">Entomology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-book"></i>
+          Research
+        </span>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-description">
+          Peer-reviewed contributions to microbial ecology and ancient DNA research.
+        </p>
+      </div>
+
+      <div class="publications-list">
+        <div class="publication-card reveal">
+          <p>
+            <strong>Thomas, S. P.</strong>, Shanmuganathan, B., Krishnan, S., et al. (2018).
+            <em>Metabarcoding of PalEnDNA as an efficient tool to recover ancient bacterial diversity.</em>
+            Geomicrobiology Journal, 35(9), 798-803.
+            <a href="https://doi.org/10.1080/01490451.2018.1474507" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="publication-card">
+          <p>
+            <strong>Thomas, S. P.</strong>, Shanmuganathan, B., Jaiswal, M. K., et al. (2019).
+            <em>Legacy of a Pleistocene bacterial community: Patterns in community dynamics through changing
+              ecosystems.</em>
+            Microbiological Research, 226, 65-73.
+            <a href="https://doi.org/10.1016/j.micres.2019.06.001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="publication-card">
+          <p>
+            Stetten, L., Boyanov, M. I., O'Loughlin, E. J., <strong>Thomas, S. P.</strong>, et al. (2025).
+            <em>Biogeochemical controls on iron speciation and cycling across upland to shoreline gradients in
+              freshwater and estuarine coastal soils.</em>
+            Science of The Total Environment.
+            <a href="https://www.sciencedirect.com/science/article/pii/S0048969725015190" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://scholar.google.com/citations?user=9EsIZrgAAAAJ&hl=en&authuser=1" target="_blank"
+          class="btn btn-outline">
+          <i class="fab fa-google-scholar"></i>
+          View All Publications
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-paper-plane"></i>
+          Connect
+        </span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-description">
+          Interested in collaboration or have an opportunity? Let's connect.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>
+            Are you hiring a Field Application Scientist (FAS) for NGS or seeking expert Technical Support in
+            Next-Generation Sequencing? With 10+ years in wet-lab NGS workflows—from amplicon library prep to
+            Illumina/MGI troubleshooting—I'm ready to join your team and accelerate customer success. Let's discuss
+            openings in human diagnostics, microbiome research, or genomics R&D.
+          <p>
+            Need NGS Data Analysis Services? I deliver end-to-end pipelines: raw FASTQ processing, DADA2/QIIME2
+            denoising, phyloseq-based visualization, and custom R Shiny dashboards.
+          </p>
+          <p>
+            Looking for Hands-On R Workshops? Tailored training in R Shiny, bioinformatics, and NGS analysis for
+            research labs, universities, or individual scientists. Sessions cover no-code microbiome explorers, Docker
+            deployment, and real-world case studies. Virtual or in-person—book a free
+            30-min needs assessment today.
+          </p>
+          <p>
+            Ready to partner? Reach out now—I'm available for immediate consultations.
+          </p>
+
+          <div class="social-links">
+            <a href="https://github.com/shanptom" target="_blank" class="social-link" aria-label="GitHub">
+              <img src="assets/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://linkedin.com/in/shanptom" target="_blank" class="social-link" aria-label="LinkedIn">
+              <img src="assets/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.researchgate.net/profile/Shan-Thomas/" target="_blank" class="social-link"
+              aria-label="ResearchGate">
+              <img src="assets/researchgate.svg" alt="ResearchGate" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://scholar.google.com/citations?user=9EsIZrgAAAAJ" target="_blank" class="social-link"
+              aria-label="Google Scholar">
+              <img src="assets/google-scholar.svg" alt="Google Scholar" style="width: 24px; height: 24px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form action="https://formspree.io/f/xblygkvj" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        &copy; 2025 Shan Thomas. Crafted with <span class="text-gradient">&lt;code/&gt;</span>
+      </p>
+      <p class="footer-text">
+        Built with vanilla HTML, CSS & JS
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

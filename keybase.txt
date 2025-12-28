@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shanptom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://shanptom.github.io
+  * I am shanptom (https://keybase.io/shanptom) on keybase.
+  * I have a public key ASD875Wh0NcyDjEMF9sUuE5QDrzqbWnnt7HtQi6Pecda5go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fcef95a1d0d7320e310c17db14b84e500ebcea6d69e7b7b1ed422e8f79c75ae60a",
+      "host": "keybase.io",
+      "kid": "0120fcef95a1d0d7320e310c17db14b84e500ebcea6d69e7b7b1ed422e8f79c75ae60a",
+      "uid": "35661f39ca00b504f16b766c05b65219",
+      "username": "shanptom"
+    },
+    "merkle_root": {
+      "ctime": 1753222407,
+      "hash": "f95c9c3e4ebe3c8b0a9b040795435a38c928f1e53650cbf287390330bda16d881dfb2c6032bff9633ffcbe8750e65b4bbe232a8a6f6272fa8ac1e4d5576dfe42",
+      "hash_meta": "dc146184f56c8819769bfad7ebf32f18696ea4c35d77b15342578d05b729af96",
+      "seqno": 26962615
+    },
+    "service": {
+      "entropy": "Vmsw+fdNKG5OIeYYyifkRmAW",
+      "hostname": "shanptom.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.3"
+  },
+  "ctime": 1753222444,
+  "expire_in": 504576000,
+  "prev": "8b262eaeb27f1ebd2cad359e53662d5d9ed4ade97df7cab844b9c4ed3b9207b1",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/O+VodDXMg4xDBfbFLhOUA686m1p57ex7UIuj3nHWuYKp3BheWxvYWTESpcCBMQgiyYurrJ/Hr0srTWeU2YtXZ7Urel998q4RLnE7TuSB7HEIGwy9N0S/GeyUEzl3lck4DslkSyzywWovxCw5wW+FAurAgHCo3NpZ8RAYmE7wApML/lCXY0gzLpc3Z+K+YThPgmylwBL4ihiCYNvBhVWC4h9LVnYYFuWews/a3IoZVxr+Wxh0gvdesb1DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIkdLdYseJqblf6A3bkAjnyofBMsWIOjZNXcdtD0+btlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shanptom
+
+==================================================================

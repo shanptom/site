@@ -1,11 +1,16 @@
-# Project dependencies
-.cache
-node_modules
-yarn-error.log
-package-lock.json
+# Old version backup
+OLD_version/
 
-# Build directory
-/public
+# Claude Code
+.claude/
+
+# System files
 .DS_Store
+Thumbs.db
 
+# Editor directories
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
